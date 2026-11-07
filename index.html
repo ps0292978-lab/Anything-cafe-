@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#241810">
+  <title>ANYTHING Café | A Little Taste of Happiness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">
+    FRESHLY BREWED HAPPINESS · EVERY SINGLE DAY
+  </div>
+
+  <header class="navbar">
+    <a href="#home" class="logo">
+      ANYTHING<span>CAFE.</span>
+      <small>COFFEE • COMFORT • CONNECTION</small>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#booking" class="nav-book">Book a Table ↗</a>
+    </nav>
+
+    <button class="cart-button" id="cartButton">
+      Bag <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <span class="eyebrow">WELCOME TO ANYTHING CAFÉ</span>
+        <h1>Life happens,<br>coffee <em>helps.</em></h1>
+        <p>Good coffee, warm conversations and little moments that make life beautiful.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-light">Explore Our Menu ↗</a>
+          <a href="#about" class="text-link">Discover Our Story</a>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <span>EST. 2026</span>
+        <span>MADE WITH LOVE & COFFEE</span>
+        <span>SCROLL TO EXPLORE ↓</span>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro section-padding" id="about">
+      <div class="intro-image reveal">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1000" alt="Beautiful cozy cafe interior">
+        <div class="image-label">A PLACE TO SLOW DOWN.</div>
+      </div>
+
+      <div class="intro-text reveal">
+        <span class="eyebrow">MORE THAN JUST COFFEE</span>
+        <h2>A little escape<br>from the <em>ordinary.</em></h2>
+        <p>
+          At ANYTHING Café, we believe the best moments are often the simplest.
+          A perfectly brewed cup, your favourite dessert, and conversations
+          that last a little longer.
+        </p>
+        <p>
+          Every detail is thoughtfully created to make you feel at home.
+          Come for the coffee. Stay for the feeling.
+        </p>
+        <a href="#booking" class="btn btn-dark">Come Visit Us ↗</a>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="highlights">
+      <div><span>01</span><h3>Freshly Brewed</h3><p>Every cup, made with care.</p></div>
+      <div><span>02</span><h3>Made With Love</h3><p>Quality ingredients, always.</p></div>
+      <div><span>03</span><h3>Cozy Moments</h3><p>Your happy little place.</p></div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu-section section-padding" id="menu">
+      <div class="section-heading reveal">
+        <span class="eyebrow">SOMETHING FOR EVERY MOOD</span>
+        <h2>Our little <em>menu.</em></h2>
+        <p>Made fresh. Served with love.</p>
+      </div>
+
+      <div class="menu-filters">
+        <button class="filter active" data-category="all">All</button>
+        <button class="filter" data-category="coffee">Coffee</button>
+        <button class="filter" data-category="food">Food</button>
+        <button class="filter" data-category="dessert">Desserts</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
+
+    <!-- BANNER -->
+    <section class="quote-banner">
+      <div class="quote-overlay"></div>
+      <div class="quote-content reveal">
+        <span>THE PERFECT PAUSE</span>
+        <h2>Take a sip.<br>Forget the rush.</h2>
+        <p>Some moments deserve to be enjoyed slowly.</p>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section section-padding" id="gallery">
+      <div class="section-heading reveal">
+        <span class="eyebrow">LITTLE MOMENTS, BIG MEMORIES</span>
+        <h2>Inside our <em>world.</em></h2>
+        <p>A glimpse of your next favourite place.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <img class="gallery-tall" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900" alt="Cafe interior">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700" alt="Coffee cup">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700" alt="Coffee preparation">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700" alt="Cafe dining">
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=700" alt="Sweet dessert">
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking-section" id="booking">
+      <div class="booking-image"></div>
+      <div class="booking-form-area">
+        <span class="eyebrow">SAVE YOUR LITTLE CORNER</span>
+        <h2>Let's make<br>some <em>memories.</em></h2>
+        <p>Planning a coffee date or catching up with friends? We'd love to have you.</p>
+
+        <form id="bookingForm">
+          <div class="form-row">
+            <input type="text" id="guestName" placeholder="Your name" required>
+            <input type="tel" id="guestPhone" placeholder="Phone number" required>
+          </div>
+          <div class="form-row">
+            <input type="date" id="bookingDate" required>
+            <input type="time" id="bookingTime" required>
+          </div>
+          <select id="guestCount" required>
+            <option value="">Number of guests</option>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+            <option value="6">6 Guests</option>
+            <option value="7+">7+ Guests</option>
+          </select>
+          <textarea id="bookingNote" placeholder="Any special request? (Optional)"></textarea>
+          <button class="btn btn-light full-btn" type="submit">Request a Reservation ↗</button>
+        </form>
+        <p class="form-note">Your reservation request will be ready to send to our team.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="section-heading reveal">
+        <span class="eyebrow">WE'D LOVE TO SEE YOU</span>
+        <h2>Find your way <em>to us.</em></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span>📍</span>
+          <h3>Visit Us</h3>
+          <p>Your Cafe Address Here<br>Kolhapur, Maharashtra, India</p>
+        </div>
+        <div class="contact-card">
+          <span>🕒</span>
+          <h3>Opening Hours</h3>
+          <p>Monday – Sunday<br>10:00 AM – 10:00 PM</p>
+        </div>
+        <div class="contact-card">
+          <span>✉️</span>
+          <h3>Say Hello</h3>
+          <p>hello@anythingcafe.com<br>+91 99999 99999</p>
+        </div>
+      </div>
+
+      <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Kolhapur+Maharashtra" target="_blank">Find Us on Maps ↗</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <a href="#home" class="footer-logo">ANYTHING<span>CAFE.</span></a>
+        <p>Good coffee. Good people. Good days.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#booking">Reservations</a>
+      </div>
+      <div class="social-links">
+        <a href="https://instagram.com/" target="_blank">Instagram ↗</a>
+        <a href="https://facebook.com/" target="_blank">Facebook ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ANYTHING CAFÉ. ALL RIGHTS RESERVED.</span>
+      <span>MADE WITH ♥ AND A LITTLE COFFEE.</span>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h2>Your Bag <span id="cartHeadingCount">(0)</span></h2>
+      <button id="closeCart" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Your bag is waiting for something delicious ☕</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+      <button class="btn btn-dark full-btn" id="checkoutButton">Order on WhatsApp ↗</button>
+    </div>
+  </aside>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
